@@ -1,0 +1,121 @@
+.head1 {
+    background-color:rgb(30, 30, 71);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
+}
+
+.ac {
+    /* max-width: 1150px; */
+    margin: 10px auto;
+    padding: 20px;
+    background-color: rgb(30, 30, 71);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding-left: 150px;
+}
+
+.ar {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 20px 0;
+    background-color: white;
+    color: black;
+    width: 1000px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.ar h2 {
+    font-size: 20px;
+    margin: 0;
+}
+
+.ar p {
+    margin: 10px 0;
+}
+
+.ar .rating {
+    color: rgb(159, 159, 232);
+    font-weight: bold;
+}
+
+/* Reset some default styles for a cleaner look */
+/* body, h1, h2, p, label, input, textarea, button {
+margin: 0;
+padding: 0;
+} */
+
+/* body {
+font-family: Arial, sans-serif;
+background-color: #f0f0f0;
+} */
+
+/* header {
+background-color: #333;
+color: white;
+text-align: center;
+padding: 20px 0;
+} */
+
+main {
+max-width: 500px;
+margin: 20px auto;
+padding: 20px;
+background-color: white;
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form {
+text-align: center;
+padding-bottom: 50px;
+}
+
+.contact-form h2 {
+font-size: 24px;
+}
+
+form {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+label {
+font-weight: bold;
+margin-top: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+width: 100%;
+padding: 10px;
+margin: 5px 0;
+border: 1px solid #ccc;
+border-radius: 4px;
+}
+
+button {
+background-color: #333;
+color: white;
+padding: 10px 20px;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+font-weight: bold;
+margin-top: 10px;
+}
+
+button:hover {
+background-color: #555;
+}
+footer
+{
+    padding-top: 20px;
+    height: 50px;
+    background-color: rgb(21, 21, 60);
+    color: white;
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+    <header>Scholarships for You!</header>
+
+    <div class="progress-bar">
+        <div class="step">
+           <p>
+              Degree
+           </p>
+           <div class="bullet">
+              <span>1</span>
+           </div>
+           <div class="check fas fa-check"></div>
+        </div>
+        <div class="step">
+           <p>
+              Country
+           </p>
+           <div class="bullet">
+              <span>2</span>
+           </div>
+           <div class="check fas fa-check"></div>
+        </div>
+
+     </div>
+
+
+
+
+        <div class="form-outer">
+        
+            <form action="#">
+
+                <div class="page">
+                <div class="title">Select Degree</div>
+                <div class="field">
+                    <div class="cb1">
+                    <input type="checkbox" id="degree1" name="degree1" value="Phd">
+                    <label for="degree1"> Phd</label><br>
+                    <input type="checkbox" id="degree2" name="degree2" value="Course">
+                    <label for="degree2"> Course</label><br>
+                    </div>
+                    <div class="cb2">
+                    <input type="checkbox" id="degree3" name="degree3" value="Bachelor">
+                    <label for="degree3"> Bachelor</label><br>
+                    <input type="checkbox" id="degree4" name="degree4" value="Master">
+                    <label for="degree4"> Master</label><br>
+                    </div>
+                </div>
+                <div class="field">
+                    <button>Next</button>
+                </div>
+                </div>
+
+                <div class="page">
+                    <div class="title">Which Country are you Looking for!?</div>
+                    <div class="field">
+                        <label for="countries">Select Country:</label>
+                        <select id="countries" name="countries">
+                            <option value="canada">Canada</option>
+                            <option value="europe">Europe</option>
+                            <option value="india">India</option>
+                            <option value="nigeria">Nigeria</option>
+                            <option value="pakistan">Pakistan</option>
+                            <option value="south-africa">South Africa</option>
+                            <option value="unites-kingdom">United Kingdom</option>
+                            <option value="united-states">United States</option> 
+                        </select>
+                    </div>
+                    <div class="field btns">
+                        <button class="prev-1 prev">Previous</button>
+                        <button class="next-1 next">Submit</button>
+                    </div>
+                </div>
+
+
+
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

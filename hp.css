@@ -1,0 +1,413 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    min-height: 100vh;
+}
+label.logo{
+    color: rgb(158, 156, 202);
+    font-size: 25px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 50px;
+}
+nav ul li a{
+    color: white;
+    font-size: 13px;
+    text-transform: uppercase;
+    position: relative;
+}
+a.active, a:hover{
+    transition: 0.5s;
+}
+.dropdown{
+    display: none;
+}
+nav ul li:hover .dropdown{
+    display: block;
+    position: absolute;
+    background-color:rgb(150, 178, 228);
+    border-radius: 0px 0px 5px 5px;
+}
+nav ul li ul li{
+    line-height: 1;
+    width: 100px;
+    border-radius: 5px;
+    padding: 6px;
+}
+.dropdown ul li{
+    width:100px;
+    display: block;
+    margin: 10px;
+    padding: 10px;
+}
+.page{
+    width: 100%;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+.page h1{
+    font-size: 45px;
+    color: rgb(235, 229, 167);
+    margin-top: 50px;
+}
+.page p{
+    font-size: 25px;
+    color:white;
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+.jb{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid rgb(235, 229, 167);
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    transition: 0.5s;
+}
+.jb:hover{
+    background: rgb(235, 229, 167);
+    color: rgb(19, 19, 45);
+}
+header{
+    background: url('bg.png');
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+}
+.title h1{
+    margin-top: 30px;
+    transform: translateY(-50%);
+    text-align: center;
+    color: rgb(33, 33, 79);
+    font-size: 30px;
+}
+.line{
+    width: 400px;
+    height: 4px;
+    background: black;
+    margin: 10px auto;
+    margin-bottom: 30px;
+}
+
+/* new page */
+.plan{
+    background-color: white;
+    color: rgb(36, 45, 92);
+    padding-bottom: 50px;
+}
+.plan span{
+    color: rgb(225, 180, 227);
+    font-size: 40px;
+}
+.plan p{
+    margin-top: 30px;
+    padding-top: 30px;
+    text-align: center;
+    font-size: 30px;
+}
+.container p{
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+.countries{
+    width:90%;
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-gap: 25px;
+}
+#opt1.c{
+    background-image: url(us.png);
+    padding: 10% 15%;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    transition: 0.3s ease;
+}
+#opt2.c{
+    background-image: url(uk.png);
+    
+    padding: 10% 15%;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    transition: 0.3s ease;
+}
+#opt3.c{
+    background-image: url(canada.png);
+    padding: 10% 15%;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    transition: 0.3s ease;
+}
+.c p{
+    font-size: 22px;
+}
+.c h3{
+    font-size: 44px;
+    margin: 20px 0 40px;
+    font-weight: 500px;
+}
+.c h3 span{
+    font-size: 16px;
+}
+.c ul{
+    text-align: left;
+    margin: 20px 0;
+    color: white;
+    list-style: none;
+}
+.c ul li{
+    margin: 25px 0;
+}
+.c ul li::before{
+    content:'\2022';
+    color: rgb(188, 188, 234);
+    font-weight: bold;
+    margin-right: 8px;
+}
+.c ul li ul{
+    list-style: none;
+    margin: 0 30px;
+}
+.c ul li ul::before{
+    color: rgb(188, 188, 234);
+    font-weight: bold;
+    margin-right: 8px;
+}
+.c button{
+    font-weight: bold;
+    width:100%;
+    padding:14px 0;
+    background: transparent;
+    color: white;
+    font-size: 15px;
+    border: 1px solid rgb(188, 188, 234);
+    border-radius: 6px;
+    margin-top: 30px;
+    cursor:pointer;
+    transition: background 0.5s;
+}
+/* button: */
+.c button:hover{
+    background:white;
+    color: rgb(7, 18, 58);
+}
+
+/* each plan heading and bg color: */
+#opt1.c:hover{
+    background: rgb(16, 16, 35);
+    color: white;
+} 
+#opt2.c:hover{
+    background: rgb(16, 16, 35);
+    color: yellow(35, 31, 107);
+} 
+#opt3.c:hover{
+    background: rgb(16, 16, 35);
+    color: white(7, 18, 58);
+} 
+
+/* each plan text color: */
+.c ul li:hover{
+    color: rgb(241, 241, 157);
+}
+
+.c:hover{
+    transform: scale(1.1, 1.06);
+}
+.fadein{
+    animation: fadeIn 5s;
+}
+.yellow{
+    margin-top: 30px;
+    background-color: rgb(244, 249, 149);
+    color: rgb(28, 28, 88);
+    font-size: 30px;
+    padding-top: 50px;
+    text-align: center;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+.smol{
+    font-size: 20px;
+}
+.border{
+    border-right: 3px solid grey;
+}
+.yellow div{
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+
+/* anushas code */
+/* body {
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    background-color: #191970;
+    margin: 0;
+    padding: 0;
+} */
+
+/* header {
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+} */
+/* .review h2 {
+    font-size: 20px;
+    margin: 0;
+}
+
+.review p {
+    margin: 10px 0;
+}
+
+.review .rating {
+    color: #007BFF;
+    font-weight: bold;
+} */
+
+/* Reset some default styles for a cleaner look */
+/* body, h1, h2, p, label, input, textarea, button {
+margin: 0;
+padding: 0;
+} */
+
+/* body {
+font-family: Arial, sans-serif;
+background-color: #f0f0f0;
+} */
+
+header {
+background-color: #333;
+color: white;
+text-align: center;
+padding: 20px 0;
+}
+
+main {
+max-width: 800px;
+margin: 20px auto;
+padding: 20px;
+background-color: white;
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form {
+text-align: center;
+}
+
+.contact-form h2 {
+font-size: 24px;
+margin-bottom: 20px;
+}
+
+form {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+label {
+font-weight: bold;
+margin-top: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+width: 100%;
+padding: 10px;
+margin: 5px 0;
+border: 1px solid #ccc;
+border-radius: 4px;
+}
+
+/* button {
+background-color: #333;
+color: white;
+padding: 10px 20px;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+font-weight: bold;
+margin-top: 10px;
+} */
+
+button:hover {
+background-color: #555;
+}
+.s{
+    padding-left: 50%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-gap: 25px; 
+}
+.steps p{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 30px;
+}
+.steps{
+    background-image: url(Screenshot\ \(2018\).png);
+    padding-bottom: 100px;
+}
+.steps h2{
+    color: rgb(28, 28, 84);
+    padding-left: 100px;
+}
+.s1 p{
+    font-size: 15px;
+}
+.s1 span{
+    font-size: 20px;
+    color: rgb(255, 255, 144);
+}
+.s1{
+    background: rgb(19, 31, 72);
+    padding: 10% 19%;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    transition: 0.3s ease;
+}
+.stepb{
+    color: white;
+    background-color: rgb(19, 31, 72);
+    width:200px;
+    height:50px;
+    margin-left: 100px;
+}

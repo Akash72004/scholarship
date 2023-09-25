@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="take2.css">
+</head>
+<body>
+
+   <div class="container">
+    <header>Scholarships for You!</header>
+    <form action="#" method="" name="form1" onsubmit="return validate()">
+        <div class="field">
+            <div class="title"><b>Select Degree</b></div>
+            <div class="deg" id="degree">
+            <input type="checkbox" id="degree1" name="degree1" value="Phd">
+            <label for="degree1"> Phd</label><br>
+            <input type="checkbox" id="degree2" name="degree2" value="Course">
+            <label for="degree2"> Course</label><br>
+            <input type="checkbox" id="degree3" name="degree3" value="Bachelor">
+            <label for="degree3"> Bachelor</label><br>
+            <input type="checkbox" id="degree4" name="degree4" value="Master">
+            <label for="degree4"> Master</label><br><br><br><br>
+            </div>
+
+           
+            
+            <label for="countries"><b>Select Country:</b><br></label>
+            <select id="countries" name="countries">
+                <option value="0">Country</option>   
+            <option value="canada">Canada</option>
+            <option value="europe">Europe</option>
+            <option value="india">India</option>
+            <option value="nigeria">Nigeria</option>
+            <option value="pakistan">Pakistan</option>
+            <option value="south-africa">South Africa</option>
+            <option value="unites-kingdom">United Kingdom</option>
+            <option value="united-states">United States</option> 
+            </select><br><br><br>
+        </div>
+        <div class="field btns">
+            <button class="submit">Submit</button>
+        </div>
+    </form>
+
+   </div>
+</body>
+</html>
+
+
+<script>
+    function validate(){
+
+        var degree=document.getElementById("degree").value;
+        var country=document.getElementById("countries").value;
+
+        
+        console.log(document.form1.countries.value);
+
+        if(countries.value.length == "0"){
+            alert("Country Not Selected");
+            countries.focus();
+            return false;
+        }
+
+    }
+</script>

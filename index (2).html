@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Reviews</title>
+    <style>
+        .body1 {
+            font-family: 'Times New Roman', Times, serif, sans-serif;
+            background-color: #191970;
+            margin: 0;
+            padding: 0;
+        }
+
+        .head1 {
+            background-color:midnightblue;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .container {
+            max-width: 1150px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: black;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .review {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin: 10px 0;
+            background-color: white;
+            color: blue;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .review h2 {
+            font-size: 20px;
+            margin: 0;
+        }
+
+        .review p {
+            margin: 10px 0;
+        }
+
+        .review .rating {
+            color: #007BFF;
+            font-weight: bold;
+        }
+
+        /* Reset some default styles for a cleaner look */
+body, h1, h2, p, label, input, textarea, button {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+main {
+    max-width: 1150px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form {
+    text-align: center;
+}
+
+.contact-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+    </style>
+</head>
+<body class="body1">
+    <header class="head1">
+        <h1>Student Reviews</h1>
+        <p>See what our students have to say..</p>
+    </header>
+    <div class="container">
+        <div class="review">
+            <h2>Yashasvi Agarwal</h2>
+            <p>The whole process of my admission was very smooth with their help; I got step-by-step guidance at every stage and they answered every doubt and guided me towards the right scholarship. Just one advice for everyone, if you have no idea for college, just trust them & you will get the best.</p>
+            <p class="rating">Rating: 5/5</p>
+        </div>
+        <div class="review">
+            <h2>Sudhir Chandna</h2>
+            <p>This site turned out to be a boon for me as it not only provided me the institution for higher studies but has also provided a knowledge temple where every desire of mine is fulfilled by God through the teachers of Indus! I also want to mention that this site is a problemless site and the enrollment process was also quite easy.</p>
+            <p class="rating">Rating: 3/5</p>
+        </div>
+        <div class="review">
+            <h2>Maya Agarwal</h2>
+            <p>I was puzzled as to which college is best for me for management course's scholarship as there are too many and everyone claims to be the best suited. However, through this site, I could compare colleges and select which one is the best</p>
+            <p class="rating">Rating: 4.5/5</p>
+        </div>
+    </div>
+<br>
+<br>
+<br>
+<br>
+    <main>
+        <section class="contact-form">
+            <h2>Contact Us</h2>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p align="center">&copy; 2023 Your Company</p>
+    </footer>
+
+</body>
+</html>
